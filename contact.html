@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Twin Cities Animal Rescue - Contact</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <img src="rescue-logo_c.png" alt="Twin Cities Animal Rescue logo" width="150">
+      <div>
+        <h1>Twin Cities Animal Rescue</h1>
+      </div>
+    </a>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+ 
+<main>
+ 
+  <section class="page-section">
+    <h2>Volunteer or Foster Interest Form</h2>
+    <p>Interested in adopting, fostering, or volunteering? Fill out the form below and our team will follow up with you soon.</p>
+ 
+    <form action="#" method="post">
+ 
+      <fieldset>
+        <legend>Your Information</legend>
+ 
+        <p>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" pattern="[A-Za-z ]+" title="Letters and spaces only" required>
+        </p>
+ 
+        <p>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required>
+        </p>
+ 
+        <p>
+          <label for="availability">Availability:</label><br>
+          <input type="text" id="availability" name="availability" placeholder="e.g. Weekday evenings, weekends">
+        </p>
+      </fieldset>
+ 
+      <fieldset>
+        <legend>Your Interest</legend>
+ 
+        <p>
+          <label for="interest">Interest Type:</label><br>
+          <select id="interest" name="interest" required>
+            <option value="volunteer">Volunteer</option>
+            <option value="foster">Foster</option>
+            <option value="adoption">Adoption Information</option>
+          </select>
+        </p>
+ 
+        <p>
+          <label for="experience">Experience with Pets:</label><br>
+          <textarea id="experience" name="experience" rows="4" cols="40" placeholder="Tell us about your experience with animals"></textarea>
+        </p>
+ 
+        <p>
+          <label for="message">Short Message:</label><br>
+          <textarea id="message" name="message" rows="4" cols="40" placeholder="Anything else you'd like us to know?"></textarea>
+        </p>
+      </fieldset>
+ 
+      <p>
+        <button type="submit">Submit Interest Form</button>
+      </p>
+ 
+    </form>
+  </section>
+ 
+  <section class="page-section">
+    <h2>Service Area</h2>
+    <p>
+      Twin Cities Animal Rescue proudly serves Minneapolis, St. Paul, and the
+      surrounding metro communities, including foster and adoption placements
+      throughout the greater Twin Cities region.
+    </p>
+  </section>
+ 
+  <section class="page-section">
+    <h2>Office Hours</h2>
+    <ul>
+      <li>Monday - Friday: 10:00 AM - 6:00 PM</li>
+      <li>Saturday: 10:00 AM - 4:00 PM</li>
+      <li>Sunday: Closed</li>
+    </ul>
+  </section>
+ 
+</main>
+ 
+<footer>
+    <p>Twin Cities Animal Rescue Serving the Twin Cities community.</p>
+</footer>
+ 
+</body>
+</html>
