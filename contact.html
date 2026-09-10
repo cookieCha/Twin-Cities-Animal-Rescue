@@ -35,58 +35,67 @@
   <section class="page-section">
     <h2>Volunteer or Foster Interest Form</h2>
     <p>Interested in adopting, fostering, or volunteering? Fill out the form below and our team will follow up with you soon.</p>
- 
-    <form action="#" method="post">
- 
+
+    <div id="prefillNote" class="prefill-note" role="status" hidden></div>
+
+    <form id="contactForm" action="#" method="post" novalidate>
+
       <fieldset>
         <legend>Your Information</legend>
- 
+
         <p>
           <label for="name">Name:</label><br>
-          <input type="text" id="name" name="name" pattern="[A-Za-z ]+" title="Letters and spaces only" required>
+          <input type="text" id="name" name="name" pattern="[A-Za-z ]+" title="Letters and spaces only" aria-describedby="nameError">
+          <span id="nameError" class="field-error" role="alert"></span>
         </p>
- 
+
         <p>
           <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" aria-describedby="emailError">
+          <span id="emailError" class="field-error" role="alert"></span>
         </p>
- 
+
         <p>
           <label for="availability">Availability:</label><br>
           <input type="text" id="availability" name="availability" placeholder="e.g. Weekday evenings, weekends">
         </p>
       </fieldset>
- 
+
       <fieldset>
         <legend>Your Interest</legend>
- 
+
         <p>
           <label for="interest">Interest Type:</label><br>
-          <select id="interest" name="interest" required>
+          <select id="interest" name="interest" aria-describedby="interestError">
+            <option value="">Select an option</option>
             <option value="volunteer">Volunteer</option>
             <option value="foster">Foster</option>
             <option value="adoption">Adoption Information</option>
           </select>
+          <span id="interestError" class="field-error" role="alert"></span>
         </p>
- 
+
         <p>
           <label for="experience">Experience with Pets:</label><br>
           <textarea id="experience" name="experience" rows="4" cols="40" placeholder="Tell us about your experience with animals"></textarea>
         </p>
- 
+
         <p>
           <label for="message">Short Message:</label><br>
-          <textarea id="message" name="message" rows="4" cols="40" placeholder="Anything else you'd like us to know?"></textarea>
+          <textarea id="message" name="message" rows="4" cols="40" placeholder="Anything else you'd like us to know?" aria-describedby="messageError"></textarea>
+          <span id="messageError" class="field-error" role="alert"></span>
         </p>
       </fieldset>
- 
+
+      <div id="formSuccess" class="form-success" role="status" hidden></div>
+
       <p>
         <button type="submit">Submit Interest Form</button>
       </p>
- 
+
     </form>
   </section>
- 
+
   <section class="page-section">
     <h2>Service Area</h2>
     <p>
@@ -109,7 +118,11 @@
  
 <footer>
     <p>Twin Cities Animal Rescue Serving the Twin Cities community.</p>
+    
 </footer>
- 
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
